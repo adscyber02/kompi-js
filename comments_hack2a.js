@@ -197,7 +197,7 @@ for (var i = 0; i < Items.length; i++) {
 var avatar = $("#comments");
 avatar.find('.comment_avatar img').each(function() {
     var ava = $(this).attr('src');
-    $(this).show().attr('src', ava.replace(/.*?:\/\//g , "//").replace(/\/s[0-9]+(\-c)?/, "/s48/"))
+    $(this).show().attr('src', ava.replace(/.*?:\/\//g , "//").replace(/\/s[0-9]+(\-c)?/, "/s48"))
 });
 var oldSrc = 'http://img1.blogblog.com/img/blank.gif'; //Default blogger image link
 var newSrc = 'https://3.bp.blogspot.com/-UNjtW9_9fcs/VrvrBJi_8CI/AAAAAAAABP4/jjFMkoCi6Ig/s35/blank-user-avatar.png'; //New image link
