@@ -22,4 +22,6 @@ jQuery(document).ready(function($) {
  $('#megamenuid').megaBloggerMenu();
 });
 function addURL(n){$(n).attr("href",function(){return this.href+"?&max-results=10"})}
+function makemeSticky2(e){function t(){var e=s.getBoundingClientRect();e.top<0?(n.className=a+" makesticking2",n.style.width=i+"px"):n.className=a}var n=document.getElementById(e),s=document.createElement("div");n.parentNode.insertBefore(s,n);var i=n.offsetWidth,a=n.className+" makesticky2";window.addEventListener("scroll",t,!1)}makemeSticky2("mega-wrapper");
 }
+
