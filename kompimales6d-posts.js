@@ -42,7 +42,6 @@ function toggleNavPanel(e){var n=document.getElementById(e),l=document.getElemen
 if (window.matchMedia("(min-width:641px)").matches){
 $(function(){if($("#sharethis").length){var s=$("#sharethis"),t=$("#sharethis").offset().top,o=$("#sharethis").height();$(window).scroll(function(){var i=$("#stoper_share").offset().top-o-20,h=$(window).scrollTop();if(h>t?s.css({position:"fixed",top:"50px"}):s.css("position","static"),h>i){var e=i-h;s.css({top:e})}})}});
 }
-$(function(){if($("#sidebar3").length){var s=$("#sidebar3"),i=$("#sidebar3").offset().top,o=$("#sidebar3").height();$(window).scroll(function(){var t=$("#sticky_stoper").offset().top-o-20,e=$(window).scrollTop();if(e>i?s.css({position:"fixed",top:"60px"}):s.css("position","static"),e>t){var r=t-e;s.css({top:r})}})}});
 
 function makemeSticky(e){function t(){var e=s.getBoundingClientRect();e.top<0?(n.className=a+" makesticking",n.style.width=i+"px"):n.className=a}var n=document.getElementById(e),s=document.createElement("div");n.parentNode.insertBefore(s,n);var i=n.offsetWidth,a=n.className+" makesticky";window.addEventListener("scroll",t,!1)}makemeSticky("pesankomentar");
 $("iframe[src*='youtube.com']").addClass("lazyload");
