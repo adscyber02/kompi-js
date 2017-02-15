@@ -39,8 +39,9 @@ clipboard2.on("success", function (o) {
 
 $("i[rel~='pre']").wrap("<pre></pre>");
 function toggleNavPanel(e){var n=document.getElementById(e),l=document.getElementById("tombol-pesan"),t="block";n.style.display==t?(n.style.display="none",l.innerHTML="<i class='fa fa-plus-square-o'></i>"):(n.style.display="block",l.innerHTML="<i class='fa fa-minus-square-o'></i>")};
+
 if (window.matchMedia("(min-width:641px)").matches){
-$(function(){if($("#sharethis").length){var s=$("#sharethis"),t=$("#sharethis").offset().top,o=$("#sharethis").height();$(window).scroll(function(){var i=$("#stoper_share").offset().top-o-20,h=$(window).scrollTop();if(h>t?s.css({position:"fixed",top:"50px"}):s.css("position","static"),h>i){var e=i-h;s.css({top:e})}})}});
+$(function(){if($("#sharethis").length){var s2=$("#sharethis"),t2=$("#sharethis").offset().top,o2=$("#sharethis").height();$(window).scroll(function(){var i2=$("#stoper_share").offset().top-o2-20,h=$(window).scrollTop();if(h>t2?s2.css({position:"fixed",top:"50px"}):s2.css("position","static"),h>i2){var e2=i2-h;s2.css({top:e2})}})}});
 }
 
 function makemeSticky(e){function t(){var e=s.getBoundingClientRect();e.top<0?(n.className=a+" makesticking",n.style.width=i+"px"):n.className=a}var n=document.getElementById(e),s=document.createElement("div");n.parentNode.insertBefore(s,n);var i=n.offsetWidth,a=n.className+" makesticky";window.addEventListener("scroll",t,!1)}makemeSticky("pesankomentar");
