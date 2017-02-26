@@ -49,7 +49,6 @@ function myFunction() {
     }
 
 $(".post").toggleClass("toggle");
-$('.grid-blog').load('/echo/json/', function() {
-            $(this).fadeIn('slow');
-    });
+$('.grid-blog').load(window.location.href + " #Blog1 .grid-blog" );
+   
 }
