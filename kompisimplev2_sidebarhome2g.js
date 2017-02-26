@@ -49,6 +49,6 @@ function myFunction() {
     }
 
 $(".post").toggleClass("toggle");
-$('.grid-blog').load(window.location.href + " #Blog1 .grid-blog > *" );
+$.getScript("http://ylx-1.com/bnr.php?section=General&pub=732174&format=300x250&ga=g");
    
 }
