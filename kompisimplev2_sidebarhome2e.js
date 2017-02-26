@@ -49,6 +49,6 @@ function myFunction() {
     }
 
 $(".post").toggleClass("toggle");
-$('.grid-blog').load(window.location.href + " #Blog1 .grid-blog" );
+$(".grid-blog").toggleClass("lazyload");
    
 }
