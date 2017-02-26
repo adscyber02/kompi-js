@@ -49,5 +49,5 @@ function myFunction() {
     }
 
 $(".post").toggleClass("toggle");
-$('.grid-blog').load();
+$('.grid-blog').refresh();
 }
